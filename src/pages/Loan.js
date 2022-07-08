@@ -1,7 +1,16 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Home";
 
 function Loan() {
-  return <div>Loan Pages</div>;
+  return (
+    <div>
+      Loan register Pages
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </div>
+  );
 }
 
 export default Loan;
